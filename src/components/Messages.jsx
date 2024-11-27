@@ -20,7 +20,7 @@ const Messages = () => {
         setFormData({ name: "", email: "", message: "" }); // Reset the form
       },
       onError: (error) => {
-        console.log(error);
+        console.log("h",error);
         
         if (error.response?.data?.error) {
           setStatus(error.response.data.error); // Show server-provided error message
