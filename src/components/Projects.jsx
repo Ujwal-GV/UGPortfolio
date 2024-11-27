@@ -63,7 +63,7 @@ export default function Projects() {
                 View on GitHub
               </a>
               {
-                link && (
+                project.link && (
                   <a
                     href={project.link}
                     target="_blank"
