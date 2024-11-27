@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "react-query";
-import axios from "axios";import axios from "axios";
+import axios from "axios";
 const server_url = import.meta.env.VITE_BACKEND_URL
 const apiClient = axios.create({
     baseURL:server_url
