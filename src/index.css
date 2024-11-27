@@ -62,3 +62,18 @@
   .custom-scroll-nowidth::-webkit-scrollbar {
     width: 0px;
   }
+
+  .dashed {
+    background-image: linear-gradient(to bottom, transparent 50%, gray 50%);
+    background-size: 4px 8px;
+  }
+
+  .dotted-road {
+    background: repeating-linear-gradient(
+      to bottom,
+      white 0 10px,
+      transparent 10px 20px
+    );
+  }
+  
+  

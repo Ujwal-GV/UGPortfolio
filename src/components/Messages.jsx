@@ -43,8 +43,8 @@ const Messages = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus(""); // Clear any previous status messages
-    mutation.mutate(formData); // Trigger the mutation
+    setStatus("");
+    mutation.mutate(formData);
   };
 
   return (

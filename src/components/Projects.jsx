@@ -25,6 +25,13 @@ export default function Projects() {
       description: "A simplified version of the popular game Candy Crush, built using JavaScript and HTML5. In this version, players can swap candies to create matches of three or more. When a match is made, the candies disappear, and new ones fall into place. The game includes levels with increasing difficulty, and players are scored based on the number of moves and time taken to complete each level.",
       github: "https://github.com/Ujwal-GV/Candy-Crush-L1",
       image: "/ANDROID.png"
+    },
+    { 
+      name: "Employee Management", 
+      description: "This, MERN-stack application is designed to manage employee details for company. It includes functionality for users to view employee lists, search an employee, edit employee details and delete an employee details. Admin users can make these CRUD operations..",
+      github: "https://github.com/Ujwal-GV/EmployeeDetailsFrontend",
+      image: "/FULLSTACK.png",
+      link: "https://employee-details-one.vercel.app/"
     }
   ];
 
@@ -55,6 +62,18 @@ export default function Projects() {
               >
                 View on GitHub
               </a>
+              {
+                link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm lg:text-md md:text-md border-2 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
+                  >
+                    View Live
+                  </a>
+                )
+              }
             </div>
           ))}
         </div>
