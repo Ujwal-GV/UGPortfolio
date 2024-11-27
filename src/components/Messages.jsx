@@ -18,7 +18,7 @@ const Messages = () => {
 
   // Define the mutation for submitting the form
   const mutation = useMutation(
-    (data) => axiosInstance.post("/api/messages" || "https://ug-portfolio-backend.vercel.app/api/messages", data),
+    (data) => axiosInstance.post("/api/messages", data),
     {
       onSuccess: () => {
         setStatus("Message sent successfully!");
