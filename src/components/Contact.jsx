@@ -1,4 +1,5 @@
 import React from 'react';
+import Messages from './Messages';
 import { FaGithub, FaLinkedin, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function Contact() {
@@ -51,6 +52,8 @@ export default function Contact() {
               <FaPhoneAlt className="mr-2" />
               Contact Me
             </a>
+
+            <Messages />
           </div>
         </div>
       </section>
