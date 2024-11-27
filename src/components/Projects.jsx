@@ -54,26 +54,28 @@ export default function Projects() {
               </div>
               <hr className="text-xl text-white w-full mr-5 my-3 rounded-full" />
               <p className="text-sm ml-2 mr-2 lg:text-md md:text-md mb-6 overflow-y-auto h-24 text-justify custom-scroll sm:custom-scroll">{project.description}</p>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm lg:text-md md:text-md border-2 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
-              >
-                View on GitHub
-              </a>
-              {
-                project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm lg:text-md md:text-md border-2 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
-                  >
-                    View Live
-                  </a>
-                )
-              }
+              <div className='flex flex-row'>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm lg:text-md md:text-md border-2 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
+                >
+                  View on GitHub
+                </a>
+                {
+                  project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm lg:text-md md:text-md border-2 ml-4 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
+                    >
+                      View Live
+                    </a>
+                  )
+                }
+              </div>
             </div>
           ))}
         </div>
