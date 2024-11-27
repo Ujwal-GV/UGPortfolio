@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { useMutation } from "react-query";
-import axios from "axios";
+import axios from "axios";import axios from "axios";
+const server_url = import.meta.env.VITE_BACKEND_URL
+const apiClient = axios.create({
+    baseURL:server_url
+});
+const axiosInstance = apiClient;  
 
 const Messages = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +18,7 @@ const Messages = () => {
 
   // Define the mutation for submitting the form
   const mutation = useMutation(
-    (data) => axios.post(import.meta.env.VITE_BACKEND_URL || "https://ug-portfolio-backend.vercel.app/api/messages", data),
+    (data) => axiosInstance.post("/api/messages" || "https://ug-portfolio-backend.vercel.app/api/messages", data),
     {
       onSuccess: () => {
         setStatus("Message sent successfully!");
