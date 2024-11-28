@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
 import Home from './components/Home';
-import { BrowserRouter as Router } from 'react-router-dom';
+import AllMessages from './components/AllMessages';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/allmessages" element={<AllMessages />} />
+      </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

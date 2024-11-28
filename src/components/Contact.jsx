@@ -1,8 +1,14 @@
 import React from 'react';
 import Messages from './Messages';
-import { FaGithub, FaLinkedin, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaPhoneAlt, FaEnvelope, FaPersonBooth } from 'react-icons/fa';
 
 export default function Contact() {
+  const navigate = useNavigate();
+  const handleChange = () => {
+    window.open("/allmessages", "_blank");
+  }
+  
   return (
     <>
       <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -56,10 +62,13 @@ export default function Contact() {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-6">
-        <div className="text-center">
+      <footer className="bg-gray-900 text-white py-6 mt-2 relative">
+        <div className="text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Ujwal Gowda. All rights reserved.</p>
         </div>
+        <span className='absolute right-0 bottom-6 lg:bottom-5 mr-4 text-md lg:text-2xl md:text-2xl hover:cursor-pointer hover:text-gray-300'>
+            <FaPersonBooth onClick={handleChange} />
+        </span>
       </footer>
     </>
   );
