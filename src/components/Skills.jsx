@@ -4,7 +4,7 @@ import { FaReact, FaNodeJs, FaTools } from 'react-icons/fa';
 const Skills = () => {
   const frontendSkills = ["JavaScript", "React", "HTML", "CSS", "Tailwind CSS"];
   const backendSkills = ["Node.js", "Express", "MongoDB", "Django", "SQL"];
-  const librarySkills = ["Framer Motion", "Redux", "Axios", "Jest", "Formik"];
+  const librarySkills = ["Framer Motion", "Keras", "Axios", "Tensorflow", "Formik"];
 
   const SkillBox = ({ title, skills, Icon, bgColor, borderColor }) => {
     return (
