@@ -18,8 +18,9 @@ export default function Projects() {
     { 
       name: "Solar Cell Surface Defect Detection Using CNN", 
       description: "This deep learning project utilizes a Convolutional Neural Network (CNN) to detect surface defects in solar cells, improving quality control in the solar panel manufacturing process. The model was trained on a dataset of solar cell images, where it learns to identify defects such as cracks, chips, and discolorations. This tool can be deployed in factories to automate the inspection process, reducing human error and speeding up production timelines.",
-      github: "https://github.com/Ujwal-GV/NeuralNetwork-Solarcell",
-      image: "/AI.png"
+      github: "https://github.com/Ujwal-GV/NeuralNetwork-Solarcell-v2",
+      image: "/AI.png",
+      link: "https://solar-cell-surface-defect-detection.onrender.com/"
     },
     { 
       name: "Banquet Hall Booking System", 
