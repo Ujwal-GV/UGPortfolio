@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaNode, FaPython, FaDatabase } from 'react-icons/fa';
+import { linearGradient } from 'framer-motion/client';
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -108,10 +109,13 @@ export default function About() {
         transition={{ duration: 0.8 }}
       >
         <motion.div
-          className="relative w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-cover bg-center rounded-3xl border-4 border-transparent shadow-xl object-contain overflow-hidden transform transition-all duration-500"
-          style={{ backgroundImage: "url('me.jpg')", rotate: 3 }}
+          className="relative border-gradient-to-r w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-cover bg-center rounded-3xl border-4 border-transparent shadow-xl object-contain overflow-hidden transform transition-all duration-500"
+          style={{ rotate: 0 }}
           whileHover={{
             scale: 1.1,
+            borderRadius: "50%",
+            border: "2px",
+            borderImage: 'linaer-gradient(45deg, black, darkblue, purple) 1',
             borderColor: 'rgba(59, 130, 246, 0.8)',
             rotate: 0,
           }}
@@ -120,10 +124,9 @@ export default function About() {
             className="absolute top-0 left-0 w-full h-full rounded-3xl border-4 animate-spinSlow"
             style={{
               border: '4px solid transparent',
-              borderImage: 'linear-gradient(45deg, black, darkblue, purple) 1', // Tri-color gradient
-              animation: 'spin 1s linear infinite',
             }}
           />
+          <img src='me.jpg' alt="me.jpg" />
         </motion.div>
 
         <a href="/Ujwal_Gowda_V_(R)" download>

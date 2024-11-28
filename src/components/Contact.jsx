@@ -11,7 +11,7 @@ export default function Contact() {
   
   return (
     <>
-      <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-100">
+      <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-100 py-10">
         <div className="max-w-3xl text-center">
           <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
           <p className="text-lg mb-6">

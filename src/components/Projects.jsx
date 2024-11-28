@@ -37,7 +37,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white px-8">
+    <section id="projects" className="flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white px-8 py-10">
       <div className="max-w-8xl w-full text-center space-y-10 mb-5">
         <h2 className="fontHead text-xl lg:text-4xl md:text-4xl font-semibold mb-10">
           Projects
