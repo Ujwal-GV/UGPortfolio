@@ -35,7 +35,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white px-8 py-20">
+    <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white px-8 py-10">
       <div className="w-full max-w-screen-xl mx-auto text-center space-y-10">
         <h2 className="fontHead text-xl lg:text-4xl md:text-4xl font-semibold">
           Skills

@@ -16,19 +16,18 @@ const Messages = () => {
 
   const [status, setStatus] = useState("");
 
-  // Define the mutation for submitting the form
   const mutation = useMutation(
     (data) => axiosInstance.post("/contact", data),
     {
       onSuccess: () => {
         setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Reset the form
+        setFormData({ name: "", email: "", message: "" });
       },
       onError: (error) => {
         console.log("h",error);
         
         if (error.response?.data?.error) {
-          setStatus(error.response.data.error); // Show server-provided error message
+          setStatus(error.response.data.error);
         } else {
           setStatus("Failed to send message. Please try again later.");
         }

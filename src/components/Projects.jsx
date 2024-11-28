@@ -3,6 +3,13 @@ import React from 'react';
 export default function Projects() {
   const projects = [
     { 
+      name: "Employee Management", 
+      description: "This, MERN-stack application is designed to manage employee details for company. It includes functionality for users to view employee lists, search an employee, edit employee details and delete an employee details. Admin users can make these CRUD operations..",
+      github: "https://github.com/Ujwal-GV/EmployeeDetailsFrontend",
+      image: "/FULLSTACK.png",
+      link: "https://employee-details-one.vercel.app/"
+    },
+    { 
       name: "Photography Portfolio Website", 
       description: "This project is a personal photography portfolio website designed to showcase various types of photography work. The website features an interactive gallery, allowing users to filter images based on categories such as portraits, landscapes, and events. It includes a contact form where potential clients can reach out, as well as an 'About Me' section with details about the photographer's experience and style.",
       github: "https://github.com/Ujwal-GV/The-Photography-Portfolio",
@@ -26,40 +33,33 @@ export default function Projects() {
       github: "https://github.com/Ujwal-GV/Candy-Crush-L1",
       image: "/ANDROID.png"
     },
-    { 
-      name: "Employee Management", 
-      description: "This, MERN-stack application is designed to manage employee details for company. It includes functionality for users to view employee lists, search an employee, edit employee details and delete an employee details. Admin users can make these CRUD operations..",
-      github: "https://github.com/Ujwal-GV/EmployeeDetailsFrontend",
-      image: "/FULLSTACK.png",
-      link: "https://employee-details-one.vercel.app/"
-    }
   ];
 
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white px-8">
-      <div className="max-w-8xl w-full text-center space-y-10">
+      <div className="max-w-8xl w-full text-center space-y-10 mb-5">
         <h2 className="fontHead text-xl lg:text-4xl md:text-4xl font-semibold mb-10">
           Projects
         </h2>
-        <div className="grid grid-cols- sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gray-900 shadow-white rounded-lg p-8 shadow-sm">
+            <div key={index} className="bg-gray-900 shadow-white rounded-lg p-6 shadow-sm">
               <div className="flex items-center space-x-4 mb-4">
                 <img 
                   src={project.image} 
                   alt={`${project.name} Image`} 
                   className="w-10 h-10 lg:w-16 lg:h-16 md:w-16 md:h-16 object-cover rounded-full" 
                 />
-                <h3 className="fontHead text-xl lg:text-2xl md:text-2xl font-bold">{project.name}</h3>
+                <h3 className="fontHead text-lg lg:text-2xl md:text-2xl font-bold">{project.name}</h3>
               </div>
               <hr className="text-xl text-white w-full mr-5 my-3 rounded-full" />
               <p className="text-sm ml-2 mr-2 lg:text-md md:text-md mb-6 overflow-y-auto h-24 text-justify custom-scroll sm:custom-scroll">{project.description}</p>
-              <div className='flex flex-row'>
+              <div className='flex flex-col lg:flex-row md:flex-row'>
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm lg:text-md md:text-md border-2 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
+                  className="text-sm lg:text-md md:text-md border-2 border-white p-2 lg:p-3 md:p-3 rounded-full mt-3 font-semibold text-white bg-gray-600"
                 >
                   View on GitHub
                 </a>
@@ -69,7 +69,7 @@ export default function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm lg:text-md md:text-md border-2 ml-4 border-white p-3 rounded-full mt-3 font-semibold text-blue-100 hover:text-blue-600"
+                      className="text-sm lg:text-md md:text-md border-2 ml-0 lg:ml-3 md:ml-3 border-white p-2 lg:p-3 md:p-3 rounded-full mt-3 font-semibold text-white bg-gray-600"
                     >
                       View Live
                     </a>

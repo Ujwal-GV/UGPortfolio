@@ -12,57 +12,50 @@ export default function Contact() {
             Feel free to reach out if you have any questions or would like to work together!
           </p>
 
-          {/* Grid layout for contact options */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Email */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 gap-1">
             <a
               href="mailto:ujwalgowda2002v@gmail.com"
-              className="flex items-center justify-center px-6 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
+              className="w-3/4 lg:w-full md:w-full mx-auto flex items-center justify-center px-6 py-6 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
             >
               <FaEnvelope className="mr-2" />
               Send an Email
             </a>
 
-            {/* GitHub */}
             <a
               href="https://github.com/Ujwal-GV/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center px-6 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
+              className="w-3/4 lg:w-full md:w-full mx-auto flex items-center justify-center px-6 py-6 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
             >
               <FaGithub className="mr-2" />
               GitHub
             </a>
 
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/ujwal-gowda-v-5ba277276"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center px-6 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
+              className="w-3/4 lg:w-full md:w-full mx-auto flex items-center justify-center px-6 py-6 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
             >
               <FaLinkedin className="mr-2" />
               LinkedIn
             </a>
 
-            {/* Phone */}
             <a
               href="tel:+91 7483268624"
-              className="flex items-center justify-center px-6 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
+              className="w-3/4 lg:w-full md:w-full mx-auto flex items-center justify-center px-6 py-6 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-all"
             >
               <FaPhoneAlt className="mr-2" />
               Contact Me
             </a>
           </div>
 
-          {/* Add the Messages component */}
           <div className="mt-8">
             <Messages />
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-6">
         <div className="text-center">
           <p>&copy; {new Date().getFullYear()} Ujwal Gowda. All rights reserved.</p>
