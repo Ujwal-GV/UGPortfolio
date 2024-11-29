@@ -6,7 +6,7 @@ export default function Projects() {
       name: "Employee Management", 
       description: "This, MERN-stack application is designed to manage employee details for company. It includes functionality for users to view employee lists, search an employee, edit employee details and delete an employee details. Admin users can make these CRUD operations..",
       github: "https://github.com/Ujwal-GV/EmployeeDetailsFrontend",
-      image: "/FULLSTACK.png",
+      image: "/MERN.png",
       link: "https://employee-details-one.vercel.app/"
     },
     { 
