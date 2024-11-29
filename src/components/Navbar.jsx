@@ -10,6 +10,7 @@ const Navbar = () => {
     { title: "About", label: "about" },
     { title: "Skills", label: "skills" },
     { title: "Projects", label: "projects" },
+    { title: "Internship", label: "internships" },
     { title: "Contact", label: "contact" },
   ];
   
